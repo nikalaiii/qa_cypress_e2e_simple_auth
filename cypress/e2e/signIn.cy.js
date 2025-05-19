@@ -44,7 +44,7 @@ describe('Sign In page', () => {
 
     cy.get('.radius').click();
 
-    cy.get('.button').should('exist').click();
+    cy.get('.icon-2x.icon-signout').should('exist').click();
 
     cy.url().should('equal', 'https://the-internet.herokuapp.com/login');
 
